@@ -11,13 +11,12 @@ jobs:
       - uses: iterative/setup-cml@v1 		
       - uses: actions/setup-python@v2						
         with:						 
-          python-version: '3.x'				
+          python-version: '3.7'				
       - name: cml						
         env:					
           repo_token: ${{ secrets.GITHUB_TOKEN }}	
         run: |					
-          
-          pip3 install - -upgrade pip			
+          pip3 install --upgrade pip			
           pip3 install -r requirements.txt		
         
          
